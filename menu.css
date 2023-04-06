@@ -300,7 +300,7 @@ Navbar
   height: 0;
   overflow: hidden;
 }
-/*==== ERORR====modal */
+
 .nav-links-menu,
 .nav-menu .social-icons {
   gap: 1.25rem;
@@ -334,6 +334,33 @@ Navbar
   height: 240px;
 }
 
+@media screen and (min-width: 768px) {
+  .nav-menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+  }
+  .logo-toggle .fa-hamburger {
+    display: none;
+  }
+
+  .nav-links-menu {
+    height: auto;
+    display: flex;
+  }
+
+  .nav-links-menu li:hover {
+    background: transparent;
+    padding-left: 0;
+  }
+
+  .social-icons-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
 /*==== NAVBAR ==== */
 
 .menu-toggle {
@@ -492,7 +519,7 @@ h5 {
 
 @media screen and (min-width: 1020px) {
   .section-announcment {
-    width: 100%;
+    width: 99%;
   }
   .announcment {
     padding: 1rem 0;
